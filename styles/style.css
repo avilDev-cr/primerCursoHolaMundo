@@ -128,6 +128,8 @@ border-color: red;
     grid-auto-rows: 140px; */
 
     width: 100%;
+   /* The `grid-template-columns: repeat(4, 50px);` property is creating a grid layout with 4 columns,
+   each with a width of 50 pixels. */
     grid-template-columns: repeat(4, 50px);
     grid-template-rows: repeat(2,50px);
     gap: 5px;
@@ -144,3 +146,41 @@ border-color: red;
     background-color: red;
   }
  
+
+  .flex {
+    display: flex;
+   /* The `flex-flow: row wrap;` property is a shorthand property that combines the `flex-direction`
+   and `flex-wrap` properties. */
+    flex-flow: row wrap;
+    height: 200px;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+
+.primero{
+    order: 5;
+    /* flex-grow: 1;
+    flex-basis: 120px; */
+    /* O podemos usar flex */
+    /* The `flex: 1 120px;` property value is shorthand for setting the flex-grow and flex-basis
+    properties. */
+    /* flex: 1 120px; */
+}
+
+.segundo{
+    order: 4;
+    /* flex-grow: 3; */
+}
+.tercero{
+    order: 3;
+    align-self: flex-start;
+}
+.cuarto{
+    order: 3;
+}
+.quinto{
+    order: 6;
+}
+.sexto{
+    order: 1;
+}
