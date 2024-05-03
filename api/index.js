@@ -40,7 +40,7 @@ const buscarUno = async()=>{
         console.log(user)
     }
 
-buscarUno()
+// buscarUno()
 
 const actualizar = async () => {
 
